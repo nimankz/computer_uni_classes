@@ -235,24 +235,24 @@
 #     print(p)
 # fuck_to_real()
 # #=====================================================================================
-# nrow=8
-# ncol=6
-# for i in range(nrow):
-#     for i in range(ncol):
-#         print("*",end="")
-#     print("\n")
-#   #====================================================================================
-def fuck_to_real(n):
-    p=1
-    for i in range(1,n+1):
-        p=p*i
-    return p
-def tarkib(n,k):
-    return fuck_to_real(n)/(fuck_to_real(n-k)*fuck_to_real(k))
-print(tarkib(5,2))
-
-nrow=5
+nrow=8
+ncol=6
 for i in range(nrow):
-    for j in range(i+1):
-        print(tarkib(i,j),"     ",end=" ")
-    print()
+    for i in range(ncol):
+        print("*",end="")
+    print("\n")
+#   #====================================================================================
+# def fuck_to_real(n):
+#     p=1
+#     for i in range(1,n+1):
+#         p=p*i
+#     return p
+# def tarkib(n,k):
+#     return fuck_to_real(n)/(fuck_to_real(n-k)*fuck_to_real(k))
+# print(tarkib(5,2))
+#
+# nrow=5
+# for i in range(nrow):
+#     for j in range(i+1):
+#         print(tarkib(i,j),"     ",end=" ")
+#     print()

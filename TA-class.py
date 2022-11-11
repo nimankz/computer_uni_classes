@@ -41,20 +41,38 @@
 # print("hello , {}".format(name))
 # print(f"hello , {name}")
 #   #=======================================================================
-def it_is_prime(number):
-    sum_of_diviseion=0
-    for item in range (1,number):
-        if number%item==0:
-            sum_of_diviseion+=item
-    if sum_of_diviseion == 1:
-        return True
-    else:
-        return False
-
-def prime_range(a,b):
-    for item in range(a,b+1):
-        if it_is_prime(item)==True:
-            print(item)
-
-prime_range(1,100)
+# def it_is_prime(number):
+#     sum_of_diviseion=0
+#     for item in range (1,number):
+#         if number%item==0:
+#             sum_of_diviseion+=item
+#     if sum_of_diviseion == 1:
+#         return True
+#     else:
+#         return False
+#
+# def prime_range(a,b):
+#     for item in range(a,b+1):
+#         if it_is_prime(item)==True:
+#             print(item)
+#
+# prime_range(1,100)
 #===============================================================================
+# m="welcome to jungle"
+# print(m.split())
+
+
+n=int(input())
+
+q=input().split()
+for i in range(n):
+    q[i]=int(q[i])
+
+a=input().split()
+for i in range(n):
+    a[i]=int(a[i])
+
+sum=0
+for i in range(n):
+    sum+=a[i]*q[i]
+print(sum)
